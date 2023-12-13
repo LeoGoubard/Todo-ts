@@ -1,6 +1,6 @@
 import { HeaderLinkType } from '../../types/HeaderLink';
 import classes from './Header.module.scss';
-import HeaderLink from './HeaderLink';
+import HeaderLink from './HeaderLink/HeaderLink';
 
 
 
