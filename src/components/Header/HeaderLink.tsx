@@ -1,11 +1,15 @@
-import { HeaderLinkType } from '../../types/HeaderLink';
-import classes from './Header.module.scss';
+import { ReactNode } from 'react';
+import classes from './HeaderLink.module.scss';
 
 
+type HeaderLinkProps = {
+  url: string;
+  children: ReactNode;
+}
 
-const HeaderLink = ({ title, url }: HeaderLinkType) => {
+const HeaderLink = ({ url, children }: HeaderLinkProps) => {
   return (
-    <a className={classes.HeaderLink} href={url}>{title}</a>
+    <a className={classes.HeaderLink + " mr-2 ml-2"} href={url}>{children}</a>
   )
 }
 export default HeaderLink;

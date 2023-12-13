@@ -22,10 +22,10 @@ const Header = () => {
 
   return (
     <header className={classes.Header}>
-      <h1 className={classes.HeaderTitle}>Tdo App</h1>
-      <nav>
+      <h1 className={classes.HeaderTitle}>Just Do It App</h1>
+      <nav className="m-auto">
         {menuItems.map((menuItem, index) => (
-          <HeaderLink key={index} title={menuItem.title} url={menuItem.url} />
+          <HeaderLink key={index}  url={menuItem.url}>{menuItem.title}</HeaderLink>
         ))}
       </nav>
     </header>
